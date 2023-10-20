@@ -7,9 +7,7 @@ app.use(express.static('public'))
 
 app.get("/", (req, res) => {
     console.log(req);
-    return res.status(200).sendFile(__dirname + '/public/index.html');
-
-    // return res.status(200).sendFile('index.html')
+    return res.status(200).sendFile('index.html')
 });
 
 app.listen(port, () => {
